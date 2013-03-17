@@ -196,7 +196,7 @@
 							<tasks>
 								<exec executable="java">
 									<arg value="-jar" />
-									<arg value="${basedir}/tools/bundler-1.0.0-jar-with-dependencies.jar" />
+									<arg value="${basedir}/tools/olca-bundler-1.0.0-jar-with-dependencies.jar" />
 									<arg value="${project.build.directory}/lib" />
 									<arg value="${project.build.directory}/bundles" />
 								</exec>
