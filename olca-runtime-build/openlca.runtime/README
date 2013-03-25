@@ -1,0 +1,69 @@
+This project contains the platform and third party libraries against which 
+openLCA is built. You can import this project as Eclipse project and use
+it as RCP target platform. Please see the web-sites of the respective projects
+that are used here for the original binaries, source code, or license conditions.
+The following third party content is included:
+
+= Apache Projects = 
+http://www.apache.org
+Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+
+= Eclipse SDK and projects =
+http://www.eclipse.org
+Eclipse Public License Version 1.0 (http://www.eclipse.org/legal/epl-v10.html)
+
+= GNU Trove = 
+http://trove.starlight-systems.com
+Lesser GNU Public License (http://trove.starlight-systems.com/license)
+
+= Google Gson = 
+http://code.google.com/p/google-gson
+Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+
+= Groovy = 
+http://groovy.codehaus.org/
+Apache 2 license (http://groovy.codehaus.org/License+Information)
+
+= Jackson = 
+http://jackson.codehaus.org/
+Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+
+= jBlas = 
+http://jblas.org/
+Revised BSD license (https://github.com/mikiobraun/jblas/blob/master/COPYING).
+
+= JDOM =
+http://www.jdom.org
+JDOM License (https://github.com/hunterhacker/jdom/blob/master/LICENSE.txt)
+
+= Jersey = 
+http://jersey.java.net/
+Common Development and Distribution License Version 1.1 
+(http://glassfish.java.net/public/CDDL+GPL_1_1.html)
+
+= Joda = 
+http://joda.sourceforge.net/
+Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+
+= MySQL Connector/J =
+http://dev.mysql.com
+GPL v2 (http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
+FOSS exception (http://www.mysql.com/about/legal/licensing/foss-exception)
+
+= ojAlgo =
+http://ojalgo.org
+MIT license (http://ojalgo.org/license.html)
+
+= OpenBLAS / GotoBLAS2 1.13 BSD version =
+https://github.com/xianyi/OpenBLAS
+BSD license (https://github.com/xianyi/OpenBLAS/blob/develop/LICENSE)
+
+= TrueZIP =
+http://truezip.java.net/
+Eclipse Public License Version 1.0 (http://truezip.java.net/license.html)
+
+= SLF4J = 
+http://www.slf4j.org/
+MIT license (http://www.slf4j.org/license.html)
+
+

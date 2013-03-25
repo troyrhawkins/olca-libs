@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="project" default="main">
+
+	<property name="platform" value="${basedir}/openlca.runtime/platform" />
+	<property name="version" value="1.3.0" />
+	
+	<target name="main">
+
+		<copy todir="${platform}/features">
+			<fileset dir="bundles/eclipse_babel/eclipse/features" includes="*/**" />
+			<fileset dir="bundles/eclipse_birt/ChartSDK/eclipse/features" includes="*/**" />
+			<fileset dir="bundles/eclipse_delta_pack/eclipse/features" includes="*/**" />
+			<fileset dir="bundles/eclipse_gef/eclipse/features" includes="*/**" />
+			<fileset dir="bundles/eclipse_mylin/mylin/features" includes="*/**" />
+			<fileset dir="bundles/eclipse_sdk/eclipse/features" includes="*/**" />
+		</copy>
+
+		<copy todir="${platform}/plugins">
+			<fileset dir="bundles/eclipse_babel/eclipse/plugins" includes="*/**" />
+			<fileset dir="bundles/eclipse_birt/ChartSDK/eclipse/plugins" includes="*/**" />
+			<fileset dir="bundles/eclipse_delta_pack/eclipse/plugins" includes="*/**" />
+			<fileset dir="bundles/eclipse_gef/eclipse/plugins" includes="*/**" />
+			<fileset dir="bundles/eclipse_link/v2.3.1/plugins" includes="*/**" />
+			<fileset dir="bundles/eclipse_mylin/mylin/plugins" includes="*/**" />
+			<fileset dir="bundles/eclipse_sdk/eclipse/plugins" includes="*/**" />
+			<fileset dir="bundles/eclipse_nebula/plugins" includes="*/**" />
+		</copy>
+		
+		<copy todir="${platform}/plugins">
+			<fileset dir="bundles/olca_deps" includes="*.jar" />
+			<fileset dir="bundles/poi" includes="*.jar" />
+			<fileset dir="bundles/jblas" includes="*.jar" />
+		</copy>		
+	</target>
+
+	<target name="clean">
+		<delete dir="${platform}/features" includes="*/**" includeEmptyDirs="true" />
+		<delete dir="${platform}/plugins" includes="*/**" includeEmptyDirs="true" />
+	</target>
+	
+	<target name="zip_it">
+		<tstamp />
+		<zip destfile="${basedir}/build/openlca-runtime-${version}-${DSTAMP}.zip" 
+			basedir="${basedir}"
+			includes="openlca.runtime/**">			
+		</zip>
+	</target>
+	
+</project>
