@@ -6,6 +6,8 @@
 	
 	<target name="main">
 
+		<antcall target="clean" />
+		
 		<copy todir="${platform}/features">
 			<fileset dir="bundles/eclipse_babel/eclipse/features" includes="*/**" />
 			<fileset dir="bundles/eclipse_birt/ChartSDK/eclipse/features" includes="*/**" />
@@ -27,10 +29,14 @@
 		</copy>
 		
 		<copy todir="${platform}/plugins">
+			<fileset dir="bundles/swt-charts" includes="*.jar" />
 			<fileset dir="bundles/olca_deps" includes="*.jar" />
 			<fileset dir="bundles/poi" includes="*.jar" />
 			<fileset dir="bundles/jblas" includes="*.jar" />
 		</copy>		
+		
+		<antcall target="zip_it" />
+		
 	</target>
 
 	<target name="clean">
