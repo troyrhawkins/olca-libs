@@ -47,6 +47,16 @@
 			<artifactId>xmlbeans</artifactId>
 			<version>2.3.0</version>
 		</dependency>
+		
+		<!-- added Xerces 2.3.0 in order to read Excel-XML files in
+			OSGi containes. Newer versions of Xerces did not work
+		 -->
+		<dependency>
+			<groupId>xerces</groupId>
+			<artifactId>xercesImpl</artifactId>
+			<version>2.3.0</version>
+		</dependency>
+		
 	</dependencies>
 
 	<build>
